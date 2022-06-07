@@ -1,0 +1,21 @@
+{
+  "name": "ssstokencontract",
+  "version": "1.0.0",
+  "description": "dummy token",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "@truffle/hdwallet-provider": "^2.0.8"
+  },
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.5.26"
+  }
+}

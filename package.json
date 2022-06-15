@@ -13,9 +13,12 @@
   "license": "ISC",
   "dependencies": {
     "@openzeppelin/contracts": "^4.6.0",
-    "@truffle/hdwallet-provider": "^2.0.8"
+    "@truffle/hdwallet-provider": "^2.0.8",
+    "uninstall": "0.0.0"
   },
   "devDependencies": {
+    "bn.js": "^5.2.1",
+    "hardhat": "^2.9.9",
     "truffle-plugin-verify": "^0.5.26"
   }
 }

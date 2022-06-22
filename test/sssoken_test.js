@@ -47,8 +47,8 @@ contract("SSSToken", (accounts) => {
       );
     } catch (error) {}
 
-    const tokenHolder = await sssTokenInstance.checkExist(admin);
-    assert.equal(tokenHolder, 1);
+    const existed = await sssTokenInstance.checkExist(admin);
+    assert.equal(existed, true);
   });
 
   it("user should not present in the list if balance is zero", async () => {
@@ -65,8 +65,8 @@ contract("SSSToken", (accounts) => {
       user2,
       (100 * 10 ** 18).toString()
     );
-    const tokenHolderIndex = await sssTokenInstance.checkExist(user1);
+    const existed = await sssTokenInstance.checkExist(user1);
 
-    assert.equal(tokenHolderIndex, 0);
+    assert.equal(existed, false);
   });
 });

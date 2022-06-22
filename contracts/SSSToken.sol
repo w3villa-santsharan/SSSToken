@@ -77,9 +77,9 @@ address[] public tokenHoldersList;
       }
     }
 
-    function checkExist(address user) external view returns(uint){
+    function checkExist(address user) external view returns(bool){
       uint ind =  tokenHoldersIndexes[user];
-      return ind;
+      return ind == 0 ? false : true ;
     }
 }
 
